@@ -8,35 +8,6 @@
     <packaging>jar</packaging>
     <name>twitter_feed</name>
 
-    <!--<repositories>-->
-        <!--<repository>-->
-            <!--<id>gts_nexus</id>-->
-            <!--<name>FNB ECM Archiva Managed Internal Repository</name>-->
-            <!--<url>https://gts-it.fnb.co.za/repo/content/groups/public</url>-->
-        <!--</repository>-->
-    <!--</repositories>-->
-
-    <!--<distributionManagement>-->
-        <!--<repository>-->
-            <!--<id>gts_release</id>-->
-            <!--<name>GTS Releases</name>-->
-            <!--<url>https://gts-it.fnb.co.za/repo/content/repositories/releases/</url>-->
-        <!--</repository>-->
-        <!--<snapshotRepository>-->
-            <!--<id>gts_snapshot</id>-->
-            <!--<name>GTS Snapshots</name>-->
-            <!--<url>https://gts-it.fnb.co.za/repo/content/repositories/snapshots/</url>-->
-        <!--</snapshotRepository>-->
-    <!--</distributionManagement>-->
-
-    <!--<scm>-->
-        <!--<connection>scm:git:https://gts-it.fnb.co.za/stash/scm/cicbat/cst_batch_processor.git</connection>-->
-        <!--<developerConnection>scm:git:ssh://git@gts-it.fnb.co.za:7999/cicbat/cst_batch_processor.git</developerConnection>-->
-        <!--<url>scm:git:https://gts-it.fnb.co.za/stash/scm/cicbat/cst_batch_processor.git</url>-->
-        <!--<tag>HEAD</tag>-->
-    <!--</scm>-->
-
-
     <properties>
         <!-- other plugin versions -->
         <version.compiler.plugin>3.1</version.compiler.plugin>
@@ -44,10 +15,6 @@
         <maven-war-plugin-version>2.1.1</maven-war-plugin-version>
         <slf4j.version>1.7.7</slf4j.version>
     </properties>
-
-    <!--<modules>-->
-        <!--<module>twitter-feed-reader</module>-->
-    <!--</modules>-->
 
 
     <build>
