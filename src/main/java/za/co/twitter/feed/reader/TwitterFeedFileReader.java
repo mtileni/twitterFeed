@@ -31,35 +31,42 @@ public class TwitterFeedFileReader {
 
     public void readTweetFile(Path filePath) throws IOException {
 
+        BufferedReader fileReader = null;
         List<String> tweets = new ArrayList<>();
-        BufferedReader fileReader = readFile(filePath);
-        String tweet;
-        while ((tweet = fileReader.readLine()) != null) {
+        try {
+            fileReader = readFile(filePath);
+            String tweet;
+            while ((tweet = fileReader.readLine()) != null) {
 
-            tweets.add(tweet);
-        }
-
-        if(Objects.nonNull(fileReader)) {
-            fileReader.close();
+                tweets.add(tweet);
+            }
+        } finally {
+            
+            if (Objects.nonNull(fileReader)) {
+                fileReader.close();
+            }
         }
         setTweets(tweets);
     }
 
     public void readUserFile(Path filePath) throws IOException {
 
-        List<String> users = new ArrayList<>();
-        BufferedReader fileReader = readFile(filePath);
+        BufferedReader fileReader = null;
+        try {
+            List<String> users = new ArrayList<>();
+            fileReader = readFile(filePath);
 
-        String user;
-        while ((user = fileReader.readLine()) != null) {
+            String user;
+            while ((user = fileReader.readLine()) != null) {
 
-            users.add(user);
+                users.add(user);
+            }
+        } finally {
+
+            if (Objects.nonNull(fileReader)) {
+                fileReader.close();
+            }
         }
-
-        if(Objects.nonNull(fileReader)) {
-            fileReader.close();
-        }
-        
         setUsers(users); }
 
     public List<String> getTweets() {
