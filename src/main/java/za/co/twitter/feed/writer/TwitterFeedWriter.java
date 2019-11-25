@@ -6,7 +6,7 @@ import java.util.*;
 
 /**
  * @Author Sandisile
- * This is a class that a string manipulation and formatting of the output, and output to the console
+ * This is a class that does a string manipulation and formatting of the output, and print output to the console
  */
 public class TwitterFeedWriter {
 
