@@ -45,7 +45,7 @@ public class TwitterFeedApp {
         }catch (IOException ioe) {
             logger.error("Error while reading file: ", ioe);
         } catch (Exception e) {
-
+            logger.error("Error while executing twitter feed simulator: ", e);
         }
     }
 }
