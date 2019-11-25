@@ -9,12 +9,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Objects;
 
+/**
+ * @Author Sandisile
+ * This is a class that reads files from the console
+ */
 public class TwitterFeedApp {
+
     private final static Logger logger = Logger.getLogger(TwitterFeedApp.class);
-//    static {
-//        String log4jConfPath = "../resources/log4j.properties";
-//        PropertyConfigurator.configure(log4jConfPath);
-//    }
+
     public static void main(String... args){
 
         TwitterFeedFileReader fileReader = new TwitterFeedFileReader();

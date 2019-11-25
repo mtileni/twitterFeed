@@ -11,6 +11,10 @@ import java.util.Objects;
 
 import org.apache.log4j.Logger;
 
+/**
+ * @Author Sandisile
+ *  This is a class to read both tweet file and user file
+ */
 public class TwitterFeedFileReader {
 
     private List<String> tweets;

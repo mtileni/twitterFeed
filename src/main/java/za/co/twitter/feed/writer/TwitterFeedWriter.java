@@ -4,6 +4,10 @@ import za.co.twitter.feed.util.ConstantUtil;
 
 import java.util.*;
 
+/**
+ * @Author Sandisile
+ * This is a class that a string manipulation and formatting of the output, and output to the console
+ */
 public class TwitterFeedWriter {
 
     public void writeUserAndTweet(String [] users, String [] tweets) {
